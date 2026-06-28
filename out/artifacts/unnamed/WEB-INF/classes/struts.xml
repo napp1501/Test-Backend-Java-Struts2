@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <constant name="struts.devMode" value="true"/>
+
+    <package name="default"
+             namespace="/"
+             extends="struts-default">
+
+        <action name="main"
+                class="com.test.controller.MainAction">
+
+            <result name="success">
+                /index.jsp
+            </result>
+
+        </action>
+
+        <action name="item"
+                class="com.test.controller.ItemAction"
+                method="showItem">
+
+            <result name="item">
+                /item.jsp
+            </result>
+
+        </action>
+
+        <action name="save"
+                class="com.test.controller.ItemAction"
+                method="save">
+
+            <result name="item">
+                /item.jsp
+            </result>
+
+        </action>
+
+        <action name="edit"
+                class="com.test.controller.ItemAction"
+                method="edit">
+
+            <result name="item">
+                /item.jsp
+            </result>
+
+        </action>
+
+        <action name="delete"
+                class="com.test.controller.ItemAction"
+                method="delete">
+
+            <result name="item">
+                /item.jsp
+            </result>
+
+        </action>
+
+        <action name="inventory"
+                class="com.test.controller.InventoryAction"
+                method="showInventory">
+
+            <result name="inventory">
+                /inventory.jsp
+            </result>
+
+        </action>
+
+        <action name="saveInventory"
+                class="com.test.controller.InventoryAction"
+                method="saveInventory">
+
+            <result name="inventory">
+                /inventory.jsp
+            </result>
+
+        </action>
+
+        <action name="editInventory"
+                class="com.test.controller.InventoryAction"
+                method="editInventory">
+
+            <result name="inventory">
+                /inventory.jsp
+            </result>
+
+        </action>
+
+        <action name="deleteInventory"
+                class="com.test.controller.InventoryAction"
+                method="deleteInventory">
+
+            <result name="inventory">
+                /inventory.jsp
+            </result>
+
+        </action>
+
+        <action name="order"
+                class="com.test.controller.OrderAction"
+                method="showOrder">
+
+            <result name="order">
+                /order.jsp
+            </result>
+
+        </action>
+
+        <action name="saveOrder"
+                class="com.test.controller.OrderAction"
+                method="saveOrder">
+
+            <result name="order">
+                /order.jsp
+            </result>
+
+        </action>
+
+        <action name="editOrder"
+                class="com.test.controller.OrderAction"
+                method="editOrder">
+
+            <result name="order">
+                /order.jsp
+            </result>
+
+        </action>
+
+        <action name="deleteOrder"
+                class="com.test.controller.OrderAction"
+                method="deleteOrder">
+
+            <result name="order">
+                /order.jsp
+            </result>
+
+        </action>
+
+        <action name="report"
+                class="com.test.controller.ReportAction">
+
+            <result name="success">
+                /report.jsp
+            </result>
+
+        </action>
+
+    </package>
+
+</struts>
