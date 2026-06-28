@@ -41,5 +41,5 @@
 
 ## Tampilan Report
 
-![Login](images/Screenshot2026-06-29013958.png)
+![Login](SS/Screenshot%202026-06-29%20013958.png)
 ### Halaman untuk melihat report revenue setiap barang.
